@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="script.js"></script>
+	<title>Mata mosquito</title>
+</head>
+
+
+<body onresize="capturar_dimensoes()">
+
+	<div id="conteudo_pontuacao">
+		<div id="pontuacao">
+			<img id="img1" src="imagens/coracao_cheio.png">
+			<img id="img2" src="imagens/coracao_cheio.png">
+			<img id="img3" src="imagens/coracao_cheio.png">
+		</div>
+		<div id="cronometro">Tempo restante= 
+			<span id="relogio"></span>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	document.getElementById('relogio').innerHTML=tempo;
+	var cria_mosquito=setInterval(function(){criar_mosquito()},tempo_nivel);
+	
+</script>
+
+</body>
+
+</html>

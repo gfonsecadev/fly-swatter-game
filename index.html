@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link  rel="stylesheet"  href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Mata mosquito</title>
+
+	<script>
+		
+		
+		function escolher_nivel(){
+			var nivel=document.getElementById('nivel').value;
+
+			if(nivel===""){
+				alert("Selecione um nivel para continuar");
+				return false;
+			}else{
+				window.location.href="jogo.html?"+ nivel;
+		}
+		}
+	</script>
+</head>
+
+
+<body onresize="capturar_dimensoes()">
+
+	<div class="container">
+		<div  class="row" style="height: 75vh;">
+			<div class="col d-flex justify-content-center " >
+				<img src="imagens/game.png" height="80%">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<div class="mb-2">
+					<select class="form-control" id="nivel">
+						<option value="">--Selecione um nível--</option>
+						<option value="normal">Normal</option>
+						<option value="medio">Médio</option>
+						<option value="dificil">Difícil</option>
+					</select>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<button type="button" class="btn btn-danger btn-lg" onclick="escolher_nivel()">Jogar</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>
