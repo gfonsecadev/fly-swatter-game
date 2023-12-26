@@ -10,7 +10,9 @@ This is a minigame in which the challenge is to kill all the flies before time r
 - hight
 
 ## Technologies used in this project:
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gfonsecadev&layout=compact)
+- JavaScript
+- Css
+- Html
 
 ### URL TO MINIGAME:
 - https://fly-swatter-game.vercel.app/
