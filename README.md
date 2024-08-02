@@ -1,6 +1,6 @@
 # fly-swatter-game
 This is a minigame in which the challenge is to kill all the flies before time runs out.
-
+ 
 ## This is a screenshot the game:
 
 ![image](imagens/screenshot.png)
